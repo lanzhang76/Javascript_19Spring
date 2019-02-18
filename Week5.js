@@ -3,8 +3,7 @@ const  chatbot = {
  questions: ["What are you?","What's your name?",
  "Where do you live?","What do you like?","How do you eat?"],
 
- answers: ["Purple Star Fish", "Asteroidea, Echinoderms/Phylum Echinodermata
-" , "I live underwater", "I like being in the shade","I have a stomach that comes out that digiest food"],
+ answers: ["Purple Star Fish", "Asteroidea, Echinoderms/Phylum Echinodermata" , "I live underwater", "I like being in the shade","I have a stomach that comes out that digiest food"],
 
   askMe: function(){
   let ask = prompt("Ask me anything");
