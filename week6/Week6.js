@@ -87,7 +87,7 @@ var showInfo = function (event){
       toolTip.style.background = "#DD4132";
     } else if (boxLocation == "box5"){
       var text = document.getElementById("tip");
-      text.innerHTML = "Pantone 17-2034, Pink Yarrow, #CE3175";
+      text.innerHTML = "PANTONE 17-2034, Pink Yarrow, #CE3175";
       toolTip.style.background = "#CE3175";
     } else if (boxLocation == "box6"){
       var text = document.getElementById("tip");
