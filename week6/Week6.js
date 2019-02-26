@@ -1,6 +1,6 @@
 const paraBox = document.getElementById("instruction");
 const text = document.createElement("p");
-const textContent = document.createTextNode("HOVER TO SEE THE COLOR INFO");
+const textContent = document.createTextNode(" HOVER TO SEE THE COLOR INFORMATION");
 text.style.font = "bold 25px arial";
 paraBox.appendChild(text);
 text.appendChild(textContent);
@@ -15,15 +15,19 @@ for (let i=0; i<box0.length; i ++){
     box0[i].style.position = "relative";
   }
 
-const boxA = document.getElementById("box1");
-const boxB = document.getElementById("box2");
-const boxC = document.getElementById("box3");
-const boxD = document.getElementById("box4");
+const box1 = document.getElementById("box1");
+const box2 = document.getElementById("box2");
+const box3 = document.getElementById("box3");
+const box4 = document.getElementById("box4");
+const box5 = document.getElementById("box5");
+const box6 = document.getElementById("box6");
 
-boxA.style.backgroundColor = "#FE840E";
+box1.style.backgroundColor = "#FE840E";
 box2.style.backgroundColor = "#FF6F61";
 box3.style.backgroundColor = "#9E1030";
 box4.style.backgroundColor = "#DD4132";
+box5.style.backgroundColor = "#CE3175";
+box6.style.backgroundColor = "#E8B5CE";
 
 const main = document.getElementById("main");
 main.style.position = "relative";
@@ -81,6 +85,14 @@ var showInfo = function (event){
       var text = document.getElementById("tip");
       text.innerHTML = "PANTONE 17-1564, Fiesta, #DD4132";
       toolTip.style.background = "#DD4132";
+    } else if (boxLocation == "box5"){
+      var text = document.getElementById("tip");
+      text.innerHTML = "Pantone 17-2034, Pink Yarrow, #CE3175";
+      toolTip.style.background = "#CE3175";
+    } else if (boxLocation == "box6"){
+      var text = document.getElementById("tip");
+      text.innerHTML = "PANTONE 14-2808, Sweet Lilac, #E8B5CE";
+      toolTip.style.background = "#E8B5CE";
     }
 }
 
