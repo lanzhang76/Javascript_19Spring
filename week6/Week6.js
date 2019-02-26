@@ -8,13 +8,12 @@ text.appendChild(textContent);
 
 const box0 = document.getElementsByClassName("box");
 for (let i=0; i<box0.length; i ++){
-    box0[i].style.height = "200px";
-    box0[i].style.width = "200px";
+    box0[i].style.height = "250px";
+    box0[i].style.width = "250px";
     box0[i].style.display = "inline-block";
     box0[i].style.zindex= "-1";
     box0[i].style.position = "relative";
   }
-
 
 const boxA = document.getElementById("box1");
 const boxB = document.getElementById("box2");
@@ -31,13 +30,17 @@ main.style.position = "relative";
 
 var toolTip = document.getElementById("tip");
 toolTip.style.display ="none";
-toolTip.style.height = "100px";
-toolTip.style.width = "100px";
-toolTip.style.background = "blue";
+toolTip.style.height = "50px";
+toolTip.style.width = "140px";
+toolTip.style.font = "13px arial";
+toolTip.style.border = "solid 2px black";
+toolTip.style.padding = "1em";
+toolTip.style.background = "white";
 toolTip.style.position = "absolute";
-toolTip.style.zindex= 5;
+toolTip.style.zindex= 1;
 
 var x,y;
+var boxLocation;
 
 function showCoordsX(event) {
    x = event.clientX;
@@ -52,25 +55,41 @@ function showCoordsY(event) {
 }
 
 
-var showInfo = function (input){
+var showInfo = function (event){
     toolTip.style.display="inline-block";
     document.addEventListener("mouseover", showCoordsX);
-  document.addEventListener("mouseover", showCoordsY);
-    toolTip.style.background = "yellow";
+    document.addEventListener("mouseover", showCoordsY);
     toolTip.style.left = x + "px";
     toolTip.style.top = y + "px";
+
+    boxLocation = event.target.id;
+    console.log(boxLocation);//show which box id it belongs to
+
+    if (boxLocation == "box1"){
+      var text = document.getElementById("tip");
+      text.innerHTML = "PANTONE 15-1264, Turmeric, #FE840E";
+      toolTip.style.background = "#FE840E";
+    } else if (boxLocation == "box2"){
+      var text = document.getElementById("tip");
+      text.innerHTML = "PANTONE 16-1546, Coral, #FF6F61";
+      toolTip.style.background = "#FF6F61";
+    } else if (boxLocation == "box3"){
+      var text = document.getElementById("tip");
+      text.innerHTML = "PANTONE 19-1862, Jester Red, #9E1030";
+      toolTip.style.background = "#9E1030";
+    } else if (boxLocation == "box4"){
+      var text = document.getElementById("tip");
+      text.innerHTML = "PANTONE 17-1564, Fiesta, #DD4132";
+      toolTip.style.background = "#DD4132";
+    }
 }
 
 var hideInfo = function (input){
   toolTip.style.display="none";
+  var text = document.getElementById("tip");
+  text.innerHTML = " ";
+  toolTip.style.background = "white";
 }
-
-// let number = ["1","2","3","4"];
-// var answer ;
-// var textShow = new function(a){
-//   answer = number[a];
-//   console.log(answer);
-// }
 
 
 for (let i=0; i<box0.length; i ++){
