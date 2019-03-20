@@ -1,0 +1,21 @@
+.section{
+  padding:2em;
+}
+
+button{
+  width: 20em;
+  height: 10em;
+  background-color: #ffd8c6;
+  border-radius: 1em;
+  font-size: 1em;
+}
+
+input{
+  width: 200px;
+  height: 40px;
+}
+
+.textInput {
+  padding:2em;
+
+}
