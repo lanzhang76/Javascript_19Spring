@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Happy Workers</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/cursor.png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="js/p5.min.js"></script>
+    <script src="js/p5.dom.js"></script>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="background-inner"></div>
+    <div class="introPage" id="introPage">
+      <div class="introCol">
+        <div class="introSection"></div>
+        <div class="introSection">
+          <img src="assets/HW_Logo_white-06.png" alt="" />
+          <br />
+          <h3>For every happy employee on earth.</h3>
+          <p style="color:white">
+            A self-managed wellness system used by hundreds of companies across
+            America
+          </p>
+        </div>
+        <div class="introSection">
+          <div class="formBackground" id="formBackground">
+            <div class="formInput">
+              <label for="nameInput">Your Name: </label>
+              <input
+                type="text"
+                name="name"
+                id="nameInput"
+                placeholder="Name of Your Preference"
+              />
+            </div>
+            <div class="formInput">
+              <label for="happyInput">Current Happy Level: </label>
+              <input type="text" id="happyInput" placeholder="1-100" />
+            </div>
+            <div class="formInput">
+              <label for="dateInput">Your Birthday: </label>
+              <input
+                type="date"
+                id="dateInput"
+                name="birthday_date"
+                value="1990-01-01"
+                min="1960-01-01"
+                max="2000-12-31"
+              />
+            </div>
+            <button id="submit">Log In</button>
+          </div>
+        </div>
+        <div class="introSection"></div>
+      </div>
+    </div>
+    <div class="warningPage" id="warningPage">
+      <div class="introCol">
+        <div class="introSection"></div>
+        <div class="introSection"></div>
+        <div class="introSection">
+          <div class="warningBackground" id="warningBackground">
+            <p>
+              Hi Happy Worker, our system notices that you’ve been on the site
+              for 10 mins. We believe your happy level is in a great shape. Time
+              for making a bigger impact!
+            </p>
+            <button
+              id="close"
+              value="Refresh Page"
+              onClick="window.location.reload()"
+            >
+              Happy to return to work
+            </button>
+          </div>
+        </div>
+        <div class="introSection"></div>
+      </div>
+    </div>
+    <div class="header empty">
+      <div class="headerFunction" id="systemInfo">
+        <p id="systemText" style="color:#ef833a">system Info here</p>
+      </div>
+      <div class="headerFunction" id="logOutButton">
+        <button value="Refresh Page" onClick="window.location.reload()">
+          Log Out
+        </button>
+      </div>
+    </div>
+    <div class="wrapper">
+      <!-- left empty -->
+      <div class="item empty"></div>
+      <div class="item content">
+        <div class="leftCol" id="logoSection">
+          <img src="assets/HW_Logo_orange-03.png" alt="" />
+          <hr />
+          <div class="logoTab" id="signOrange">
+            <p>We are OPEN (M-F 9 am to 9pm)</p>
+          </div>
+          <!-- <div class="logoTab" id="slogan"></div> -->
+        </div>
+        <div class="leftCol leftFrame">
+          <div class="tab"><p>Employee Profile</p></div>
+          <div class="mainFrame" id="profileSection">
+            <div class="profileRow1">
+              <div class="profileCol"><img src="assets/profile-04.png" /></div>
+              <div class="profileCol">
+                <ul style="list-style-type:none;">
+                  <li>Company: Smith & Partners</li>
+                  <li id="ProfileName">Name:</li>
+                  <li
+                    id="ProfileHappy"
+                    style="font-size:1.3em;padding-top: 0.3em;"
+                  >
+                    Current Happy Level:
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="profileRow2">
+              <div class="profileCol">
+                <ul style="list-style-type:none;">
+                  <li id="vacationDate">
+                    108 days left from creating annual value
+                  </li>
+                  <li id="weekendDate">
+                    38 days left from making weekly impact
+                  </li>
+                  <li id="bdayDate">
+                    129 days till celebrating your bday with us
+                  </li>
+                </ul>
+              </div>
+              <div class="profileCol">
+                <ul style="list-style-type:none;">
+                  <li>
+                    <a
+                      href="mailto:someone@example.com?Subject=Vacation%20Request&Body=Hello%20(boss)%2C%0A%0AMy%20happiness%20levels%20have%20been%20consistently%20high%20and%20I%20have%20consistently%20been%20making%20positive%20impacts%20in%20the%20company%2E%20%20In%20order%20for%20my%20work%20to%20remain%20at%20a%20high%20level%2C%20I%20would%20like%20to%20request%20a%20long%20vacation%2E%20I%20believe%20taking%20two%20days%20off%20in%20addition%20to%20my%20one%20weekend%20day%20would%20be%20beneficial%20to%20myself%20and%20the%20company%20and%20increase%20my%20productivity%20and%20happiness%20level%20upon%20returning%2E%20%20Please%20consider%20this%20request%2E%20%20%0A%0AThank%20you%2C%0AHappy%20Worker"
+                      target="_top"
+                      >📧 Vacation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:someone@example.com?Subject=Out%20of%20Office%20Notice&Body=Hello%2C%0A%0ASorry%20for%20not%20being%20able%20to%20respond%20to%20your%20email%20as%20I%20am%20out%20of%20the%20office%20today%2E%20Although%20I’m%20not%20there%20physically%20to%20encourage%20you%2C%20you%20will%20have%20a%20wonderful%20day%20as%20I%20will%20encourage%20you%20through%20the%20social%20pool%2E%20Hope%20you%20will%20do%20the%20same%2E%0A%0AThank%20you%2C%0AHappy%20Worker"
+                      target="_top"
+                      >📧 OOO</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:someone@example.com?Subject=Work%20from%20Home%20Today&Body=Fellow%20Happy%20workers%2C%20%0A%0AToday%20I%20will%20be%20working%20from%20home%2E%20%20Do%20not%20hesitate%20to%20reach%20out%20to%20me%20for%20anything%20as%20I%20will%20be%20at%20the%20ready%20to%20assist%2E%20%20I%20can%20be%20reached%20through%20text,%20phone%20call,%20email,%20my%20wife’s%20phone,%20fax,%20LinkedIn%20and%20Facebook%20message%20as%20well%20in%20case%20you%20need%20me%2E%20%0A%0AThank%20you%2C%0AHappy%20Worker"
+                      target="_top"
+                      >📧 WFH</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="leftCol leftFrame" id="socialPool">
+          <div class="tab"><p>Social Pool</p></div>
+          <div class="mainFrame " id="pool"></div>
+        </div>
+      </div>
+      <div class="item content">
+        <div class="rightCol">
+          <div class="tab"><p>Activity Panel</p></div>
+          <div class="mainFrame" id="activityPanel">
+            <div
+              style="padding-top: 56.25%; position: relative; overflow: hidden;"
+            >
+              <iframe
+                id="video"
+                frameborder="0"
+                allowfullscreen=""
+                scrolling="no"
+                src="https://onelineplayer.com/player.html?autoplay=true&loop=true&autopause=false&muted=false&url=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fozz8zl12fbk79d8%2FPlant.mp4%3Fraw%3D1&poster=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fdesonv1fnfqc5b0%2Factivity-Series.png%3Fraw%3D1&time=false&progressBar=false&playButton=false&overlay=true&muteButton=false&fullscreenButton=false&style=light&logo=false&quality=720p"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px;"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="rightCol" id="activityButtons">
+          <div class="acitivityRow">
+            <div class="acitivityCol" id="activity1">
+              <img src="" id="preview0" class="icon" />
+            </div>
+            <div class="acitivityCol" id="activity2">
+              <img src="" id="preview1" class="icon" />
+            </div>
+            <div class="acitivityCol" id="activity3">
+              <img src="" id="preview2" class="icon" />
+            </div>
+            <div class="acitivityCol" id="activity4">
+              <img src="" id="preview3" class="icon" />
+            </div>
+          </div>
+          <div class="acitivityRow">
+            <div class="acitivityCol" id="activity5">
+              <img src="" id="preview4" class="icon" />
+            </div>
+            <div class="acitivityCol" id="activity6">
+              <img src="" id="preview5" class="icon" />
+            </div>
+            <div class="acitivityCol" id="activity7">
+              <img src="" id="preview6" class="icon" />
+            </div>
+            <div class="acitivityCol" id="activity8">
+              <img src="" id="preview7" class="icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right empty -->
+      <div class="item empty"></div>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
