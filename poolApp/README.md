@@ -11,7 +11,7 @@ The site opens from Mondays to Fridays from 9 am to 9 pm. It consists of modules
 Download the entire poolApp folder. Run npm install
 
 ```bash
-npm install
+$ npm install
 ```
 
 ## Run the app
@@ -19,7 +19,7 @@ npm install
 In order to run the app, you need to have a local server. In this case, use node or nodemon to run the app.js in the poolApp folder.
 
 ```bash
-node app.js
+$ node app.js
 ```
 
 Now you can go to the site by input http://localhost:3000 in your browser
