@@ -1,4 +1,4 @@
-# Happy Worker
+# Happy Workers web app
 
 “Happy Workers” is a speculative digital wellness program that companies will adopt soon to facilitate their employees' autonomy over their stress management at their workplace. 
 
