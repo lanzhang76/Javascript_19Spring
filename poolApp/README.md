@@ -22,4 +22,4 @@ In order to run the app, you need to have a local server. In this case, use node
 $ node app.js
 ```
 
-Now you can go to the site by input http://localhost:3000 in your browser
+Now you can go to the site by input http://localhost:3000 in your Google Chrome browser
