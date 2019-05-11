@@ -7,9 +7,6 @@ function updateTime() {
   var minute = new Date().getMinutes();
   let second = new Date().getSeconds();
   let now = Math.floor(Date.now() / 1000);
-  // console.log(now);
-  // let system = "You've been on the system for " + minute + " : " + second + " ";
-  // document.getElementById("systemText").innerHTML = system;
 }
 previewPic();
 //---------------P5-----------------//
@@ -133,7 +130,6 @@ class person {
     rect(posX, posY + 10, 10, 20, 3);
     rectMode(CORNER);
     //arms
-    // stroke('hsb(160, s%, 50%)');
     stroke(h, s, b);
     strokeWeight(6);
     line(posX + 2, posY + 8, posX + 10, posY + 11);
@@ -338,7 +334,8 @@ function previewPic() {
   }
 }
 
-// VIDEO SETUP BELOW:
+// VIDEO FUNCTION SETUP BELOW----------------------------------------
+
 videoURL = [
   "https://onelineplayer.com/player.html?autoplay=true&loop=false&autopause=true&muted=false&url=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fozz8zl12fbk79d8%2FPlant.mp4%3Fraw%3D1&poster=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fdesonv1fnfqc5b0%2Factivity-Series.png%3Fraw%3D1&time=false&progressBar=false&playButton=false&overlay=true&muteButton=false&fullscreenButton=false&style=light&logo=false&quality=720p",
   "https://onelineplayer.com/player.html?autoplay=true&loop=false&autopause=false&muted=false&url=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fezt9s3jec877icz%2FWrist.mp4%3Fraw%3D1&poster=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fdesonv1fnfqc5b0%2Factivity-Series.png%3Fraw%3D1&time=false&progressBar=false&playButton=false&overlay=true&muteButton=false&fullscreenButton=false&style=light&logo=false&quality=720p",
@@ -354,8 +351,6 @@ var activity3 = document.getElementById("activity3");
 var activity4 = document.getElementById("activity4");
 var activity5 = document.getElementById("activity5");
 var activity6 = document.getElementById("activity6");
-// var activity7 = document.getElementById("activity7");
-// var activity8 = document.getElementById("activity8");
 
 activity1.addEventListener("click", function() {
   console.log("Plays Eye Exercise");
@@ -390,7 +385,6 @@ activity4.addEventListener("click", function() {
 });
 
 activity5.addEventListener("click", function() {
-  console.log("immune");
   videoPick = videoURL[4];
   videoPlay();
   previewPic();
@@ -398,18 +392,11 @@ activity5.addEventListener("click", function() {
 });
 
 activity6.addEventListener("click", function() {
-  console.log("immune");
   videoPick = videoURL[5];
   videoPlay();
   previewPic();
   playingNow("preview5");
 });
-
-activity3.addEventListener("click", videoPlay);
-activity4.addEventListener("click", videoPlay);
-activity5.addEventListener("click", videoPlay);
-activity6.addEventListener("click", videoPlay);
-// activity7.addEventListener("click", videoPlay);
 
 function playingNow(preview) {
   var previewPlay = preview;
@@ -436,11 +423,4 @@ function videoPlay() {
       alert(error);
     }
   }
-}
-
-function emailWrite() {
-  var vacationMail = document.getElementById("vacationMail");
-  var vacationBody = "";
-  var vacation = "mailto:someone@example.com?Subject=Vacation%20Request";
-  vacationMail.setAttribute("href", vacation);
 }

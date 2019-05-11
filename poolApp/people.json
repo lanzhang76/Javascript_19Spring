@@ -2,7 +2,7 @@
   "Lauren J": {
     "name": "Lauren J",
     "date": "1990-01-01",
-    "happyLevel": "75"
+    "happyLevel": "60"
   },
   "Lan": {
     "name": "Lan",
@@ -12,166 +12,51 @@
   "Thompson": {
     "name": "Thompson",
     "date": "1990-01-01",
-    "happyLevel": "55"
+    "happyLevel": "40"
   },
   "Smith J": {
     "name": "Smith J",
     "date": "1984-03-08",
-    "happyLevel": "45"
+    "happyLevel": "20"
   },
   "Ruth P": {
     "name": "Ruth P",
     "date": "1984-03-08",
-    "happyLevel": "50"
+    "happyLevel": "25"
   },
   "Mindy K": {
     "name": "Mindy K",
     "date": "undefined",
-    "happyLevel": "40"
+    "happyLevel": "25"
   },
   "Bob": {
     "name": "Bob",
     "date": "undefined",
-    "happyLevel": "35"
+    "happyLevel": "30"
   },
   "Robert T": {
-    "name": "Robert T",
+    "name": "undefined",
     "date": "undefined",
-    "happyLevel": "25"
+    "happyLevel": "20"
   },
   "Michael W": {
-    "name": "Michael W",
+    "name": "uw",
     "date": "undefined",
-    "happyLevel": "40"
+    "happyLevel": "25"
   },
   "john 0": {
     "name": "john 0",
     "date": "1990-01-01",
-    "happyLevel": "40"
+    "happyLevel": "30"
   },
-  "Zina": {
-    "name": "Zina",
+  "Romeo": {
+    "name": "Romeo",
     "date": "1990-01-01",
-    "happyLevel": "125"
+    "happyLevel": "35"
   },
-  "Ella ": {
-    "name": "Ella ",
-    "date": "1993-09-30",
-    "happyLevel": "105"
-  },
-  "Ella": {
-    "name": "Ella",
-    "date": "1993-09-30",
-    "happyLevel": "125"
-  },
-  "Victoria": {
-    "name": "Victoria",
-    "date": "1994-10-01",
-    "happyLevel": "140"
-  },
-  "PING": {
-    "name": "PING",
-    "date": "1992-06-21",
-    "happyLevel": "80"
-  },
-  "AYA": {
-    "name": "AYA",
-    "date": "1999-04-02",
-    "happyLevel": "65"
-  },
-  "kellyk": {
-    "name": "kellyk",
-    "date": "1999-06-29",
-    "happyLevel": "75"
-  },
-  "Gina": {
-    "name": "Gina",
-    "date": "1992-03-12",
-    "happyLevel": "50"
-  },
-  "Nikki": {
-    "name": "Nikki",
-    "date": "1992-12-19",
-    "happyLevel": "110"
-  },
-  "Alice": {
-    "name": "Alice",
-    "date": "1990-01-01",
-    "happyLevel": "140"
-  },
-  "huhuu": {
-    "name": "huhuu",
-    "date": "1990-01-01",
-    "happyLevel": "75"
-  },
-  "Brandals": {
-    "name": "Brandals",
-    "date": "1996-02-28",
-    "happyLevel": "85"
-  },
-  "Alexander Moore": {
-    "name": "Alexander Moore",
-    "date": "1994-07-15",
-    "happyLevel": "145"
-  },
-  "LU": {
-    "name": "LU",
-    "date": "1995-07-30",
-    "happyLevel": "21"
-  },
-  "SIXUAN": {
-    "name": "SIXUAN",
-    "date": "1995-08-27",
-    "happyLevel": "70"
-  },
-  "serena": {
-    "name": "serena",
-    "date": "1990-01-01",
-    "happyLevel": "155"
-  },
-  "Stella": {
-    "name": "Stella",
-    "date": "1996-10-21",
-    "happyLevel": "95"
-  },
-  "john": {
-    "name": "john",
-    "date": "1990-01-01",
-    "happyLevel": "50"
-  },
-  "Lily": {
-    "name": "Lily",
-    "date": "1995-05-01",
-    "happyLevel": "80"
-  },
-  "Jason": {
-    "name": "Jason",
-    "date": "1990-01-11",
-    "happyLevel": "95"
-  },
-  "Alison": {
-    "name": "Alison",
-    "date": "1995-08-22",
-    "happyLevel": "100"
-  },
-  "Chelsea": {
-    "name": "Chelsea",
-    "date": "1995-08-18",
-    "happyLevel": "120"
-  },
-  "lu": {
-    "name": "lu",
-    "date": "1995-07-30",
-    "happyLevel": "32"
-  },
-  "camila": {
-    "name": "camila",
-    "date": "1997-12-20",
-    "happyLevel": "110"
-  },
-  "Athina": {
-    "name": "Athina",
-    "date": "1991-12-16",
-    "happyLevel": "122"
+  "Ping": {
+    "name": "Ping",
+    "date": "1990-05-20",
+    "happyLevel": "90"
   }
 }

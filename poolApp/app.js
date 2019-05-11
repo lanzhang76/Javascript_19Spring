@@ -1,9 +1,6 @@
 var fs = require("fs");
 var data = fs.readFileSync("people.json");
 var person = JSON.parse(data);
-console.log(person);
-// var example = person[0].name;
-// console.log(example);
 
 var express = require("express");
 var app = express();
@@ -17,9 +14,8 @@ function listen() {
 app.use(express.static("website"));
 
 //create a route that shows up with in vcation path
-//:date means it's a parameter the user can type in
-app.get("/add/:name/:date?/:happy?/", addPerson);
 //fucntion with the two parameters: request is the input, and response is the output
+app.get("/add/:name/:date?/:happy?/", addPerson);
 function addPerson(request, response) {
   let data = request.params;
   let name = data.name;
@@ -32,7 +28,7 @@ function addPerson(request, response) {
     alert(reply);
   } else {
     //Now writing the data into the json file
-    // person[name] = time; //This will make "'Lan': 2018-02-02"
+    //person[name] = time; //This will make "'Lan': 2018-02-02"
     person[name] = {
       name: name,
       date: time,
@@ -55,6 +51,7 @@ function addPerson(request, response) {
     console.log(jsonFormatDate);
   }
 }
+
 //create a new route that shows the list
 app.get("/personList", showList);
 function showList(request, response) {
@@ -63,7 +60,6 @@ function showList(request, response) {
 
 //create a new route that enables you to search for the person
 app.get("/searchPeople/:word", searchPeople);
-
 function searchPeople(request, response) {
   //remember to call out params
   let personName = request.params.word;
